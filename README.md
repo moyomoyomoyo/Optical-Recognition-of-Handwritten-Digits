@@ -1,20 +1,20 @@
-# Optical-Recognition-of-Handwritten-Digits
+# Optical Recognition of Handwritten Digits
 
-## Install the ucimlrepo package 
+### Install the ucimlrepo package 
 pip install ucimlrepo
 
-## Import the dataset into your code
+### Import the dataset into your code
 from ucimlrepo import fetch_ucirepo 
   
-# fetch dataset 
+## fetch dataset 
 optical_recognition_of_handwritten_digits = fetch_ucirepo(id=80) 
   
-# data (as pandas dataframes) 
+### data (as pandas dataframes) 
 X = optical_recognition_of_handwritten_digits.data.features 
 y = optical_recognition_of_handwritten_digits.data.targets 
   
-# metadata 
+### metadata 
 print(optical_recognition_of_handwritten_digits.metadata) 
   
-# variable information 
+### variable information 
 print(optical_recognition_of_handwritten_digits.variables) 
