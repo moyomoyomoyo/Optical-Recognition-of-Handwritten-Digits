@@ -14,3 +14,4 @@ pip install -U scikit-image
 Questa libreria offre strumenti per il preprocessing e l’analisi delle immagini: 
 ridimensionamento e normalizzazione, filtraggio/denoising, estrazione di feature (bordi, texture) e varie trasformazioni/visualizzazioni.
 
+## Spiegazione file
