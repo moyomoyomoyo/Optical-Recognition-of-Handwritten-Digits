@@ -1,4 +1,4 @@
-# Informazioni aggiuntive per codice
+# Informazioni aggiuntive del codice
 ## Installazione librerie
 Per utilizzare il dataset direttamente da Python, installa la libreria `ucimlrepo`:
 
