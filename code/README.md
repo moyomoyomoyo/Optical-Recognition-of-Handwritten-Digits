@@ -32,6 +32,6 @@ In questo file viene mostrato come un’immagine del dataset UCI (8×8) può ess
 In questo file viene mostrato come un’immagine 8×8 del dataset UCI può essere ingrandita a 32×32 replicando i pixel. La visualizzazione affianca l’immagine upscaled con griglia 4×4 e la matrice originale 8×8 con i valori numerici (0–16).
 
 ### `spectral_cluster.py`
-In questo file viene applicato Spectral Clustering per raggruppare le cifre scritte a mano in 10 cluster non supervisionati. I dati originali (64 feature) vengono ridotti a 2 dimensioni con PCA per consentire una visualizzazione efficace.
+In questo file applichiamo Spectral Clustering per raggruppare le cifre scritte a mano in 10 cluster non supervisionati, visualizzati in 2D tramite PCA. Una mappatura manuale tra cluster e cifre reali consente il confronto diretto con le etichette originali, evidenziando la coerenza tra gruppi trovati e classi attese.
 
 
