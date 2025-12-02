@@ -22,13 +22,23 @@ rf.fit(X_train, y_train)
 # Predizioni 
 y_pred = rf.predict(X_test)
 
-# Accuracy 
+# Accuracy random forest
 acc = accuracy_score(y_test, y_pred)
 print(f"Accuracy Random Forest: {acc:.4f}")
 
 # Classification Report 
-print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
+# Ottieni report come dict
+report = classification_report(y_test, y_pred, output_dict=True)
+
+# Converti in DataFrame
+df_report = pd.DataFrame(report).transpose()
+
+df_report = df_report.iloc[:-3]
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(df_report, annot=True, cmap="viridis", fmt=".2f", cbar=False)
+plt.title("Classification Report - Random Forest")
+plt.show()
 
 # Confusion Matrix 
 cm = confusion_matrix(y_test, y_pred)
