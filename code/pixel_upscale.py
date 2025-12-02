@@ -21,7 +21,7 @@ fig, ax = plt.subplots(1, 2, figsize=(12, 5))
 
 # Immagine upscaled 32x32 con griglia 4×4
 ax[0].imshow(image32_norm, cmap='gray_r', vmin=0, vmax=1)
-ax[0].set_title("Immagine ridota a 8x8")
+ax[0].set_title("Immagine ridotta a 8x8")
 ax[0].axis('off')
 
 for x in range(0, 32, 4):
