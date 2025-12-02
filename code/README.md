@@ -36,3 +36,6 @@ In questo file applichiamo Spectral Clustering per raggruppare le cifre scritte 
 
 ### `confusion_matrix.py`
 In questo file viene mostrata la matrice di confusione che mostra la corrispondenza tra i cluster non supervisionati ottenuti tramite Spectral Clustering e le etichette reali delle cifre. Ogni cella indica quanti campioni con una certa etichetta sono stati assegnati a ciascun cluster, permettendo di valutare la coerenza tra gruppi trovati e classi attese.
+
+### `random_forest.py`
+In questo file viene addestrato un classificatore Random Forest per il riconoscimento di cifre scritte a mano, valutandone le prestazioni tramite accuratezza, report di classificazione e visualizzazione della matrice di confusione.
